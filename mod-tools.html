@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Tools - Monster Madness: Battle for Suburbia</title>
+    <link rel="stylesheet" href="mod-tools.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        /* Initial cursor style */
+        body {
+            cursor: url('1.png'), auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Change cursor on mousedown */
+        body.mousedown {
+            cursor: url('2.png'), auto;
+        }
+        
+        /* Ensure the cursor stays consistent on all elements */
+        a, button, .button, .sidebar-toggle {
+            cursor: inherit; /* inherit the cursor from the body */
+        }
+
+        /* Fix for footer alignment */
+        .content-wrapper {
+            flex: 1;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background: black; /* Adjust as necessary */
+        }
+
+        .footer-content {
+            max-width: 1200px; /* or any width that suits your layout */
+            margin: 0 auto;
+            color: #00ffff !important; /* Ensure the blue color is applied */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Switch Device</a></li>
+                    <li><a href="HomePC.html">Home</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="trailer.html">Trailer</a></li>
+                    <li><a href="xbox-patches.html">Xbox Patches</a></li>
+                    <li><a href="pc-patches.html">PC Patches</a></li>
+                    <li><a href="mod-tools.html">Mod Tools</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+        <main class="main-content">
+            <div class="mod-tools-section">
+                <div class="mod-tools-content">
+                    <p>These patches were created using a program called UPK Explorer. This program provides the necessary tools to develop and implement updates and changes to the game effectively.</p>
+                    <img src="upk-explorer.png" alt="UPK Explorer" class="mod-tools-image">
+                    <div class="mod-tools-links">
+                        <a href="https://www.pcgamingwiki.com/wiki/UPK_Explorer" class="mod-tools-button wiki">
+                            View Wiki
+                        </a>
+                        <a href="https://www.nexusmods.com/site/mods/587" class="mod-tools-button toolset">
+                            View Program
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Monster Madness: Battle for Suburbia was developed/published by SouthPeak Games/Artificial Studios/Immersion Games. Although the company is now defunct, all rights to the game still belong to the individuals who worked on its development. This community patch is in no way associated with Artificial Studios or any entities formerly associated with it. All art, footage, and assets used in this patch remain the intellectual property of their respective creators. Any modifications to the game are done at the user's own risk. The creators of this patch do not take responsibility for any issues or damages that may arise from its use.</p>
+        </div>
+    </footer>
+
+    <!-- Inserted JavaScript for cursor change -->
+    <script>
+    document.addEventListener('mousedown', function() {
+        document.body.classList.add('mousedown');
+    });
+
+    document.addEventListener('mouseup', function() {
+        document.body.classList.remove('mousedown');
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Madness: Battle for Suburbia</title>
+    <link rel="stylesheet" href="HomeMobile.CSS">
+    <style>
+        .content-wrapper {
+            padding: 20px;
+        }
+        .main-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .footer-content {
+            text-align: center;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .logos img {
+            max-width: 80px;
+            height: auto;
+        }
+        .esrb-logo {
+            max-width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <main class="main-content" role="main">
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Add any additional content here -->
+        </main>
+    </div>
+
+    <footer class="footer-content">
+        <div class="logos">
+            <img src="studio-logo1.png" alt="Studio Logo 1">
+            <img src="studio-logo2.png" alt="Studio Logo 2">
+            <img src="studio-logo3.png" alt="Studio Logo 3">
+            <img src="esrb.png" alt="ESRB Rating" class="esrb-logo">
+        </div>
+        <p>Monster Madness: Battle for Suburbia was developed/published by SouthPeak Games/Artificial Studios/Immersion Games. Although the company is now defunct, all rights to the game still belong to the individuals who worked on its development. This community patch is in no way associated with Artificial Studios or any entities formerly associated with it. All art, footage, and assets used in this patch remain the intellectual property of their respective creators. Any modifications to the game are done at the user's own risk. The creators of this patch do not take responsibility for any issues or damages that may arise from its use.</p>
+    </footer>
+</body>
+</html>

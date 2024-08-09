@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Madness: Battle for Suburbia - Community</title>
+    <style>
+        @font-face {
+            font-family: 'DNK';
+            src: url('dnk.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'DNK', sans-serif;
+            background-color: #0b0c10;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px 0;
+            background-color: rgba(31, 40, 51, 0.8);
+        }
+
+        h1, h2 {
+            color: #66fcf1;
+            text-shadow: 2px 2px #000;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .content-wrapper {
+            padding: 15px;
+        }
+
+        .main-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .community-section {
+            text-align: center;
+        }
+
+        .community-section p {
+            font-size: 1em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .community-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .community-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2em;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .community-button img {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .discord { background-color: #7289da; }
+        .reddit { background-color: #ff4500; }
+
+        .community-button:active {
+            transform: translateY(2px);
+        }
+
+        footer {
+            background-color: rgba(31, 40, 51, 0.8);
+            color: #66fcf1;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 0 #000;
+        }
+
+        footer p {
+            margin: 10px 0 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <div class="community-section">
+                <h2>JOIN THE MONSTER MADNESS DISCORD!</h2>
+                <p>Join to talk all things Monster Madness, play old versions of the game, and join the #1 resource for all things Monster Madness!</p>
+                
+                <div class="community-links">
+                    <a href="https://discord.gg/Ctd4fSthsz" class="community-button discord">
+                        <img src="discord-logo.png" alt="Discord Logo"> Join our Discord
+                    </a>
+                    <a href="https://www.reddit.com/r/MonsterMadness/" class="community-button reddit">
+                        <img src="reddit-logo.png" alt="Reddit Logo"> Join the Reddit
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Monster Madness: Battle for Suburbia was developed/published by SouthPeak Games/Artificial Studios/Immersion Games. Although the company is now defunct, all rights to the game still belong to the individuals who worked on its development. This community patch is in no way associated with Artificial Studios or any entities formerly associated with it. All art, footage, and assets used in this patch remain the intellectual property of their respective creators. Any modifications to the game are done at the user's own risk. The creators of this patch do not take responsibility for any issues or damages that may arise from its use.</p>
+    </footer>
+</body>
+</html>

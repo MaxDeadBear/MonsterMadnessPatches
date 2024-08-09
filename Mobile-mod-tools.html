@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Madness: Battle for Suburbia - Mod Tools</title>
+    <style>
+        @font-face {
+            font-family: 'DNK';
+            src: url('dnk.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'DNK', sans-serif;
+            background-color: #0b0c10;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px 0;
+            background-color: rgba(31, 40, 51, 0.8);
+        }
+
+        h1 {
+            color: #66fcf1;
+            text-shadow: 2px 2px #000;
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .content-wrapper {
+            padding: 15px;
+        }
+
+        .main-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .mod-tools-content p {
+            font-size: 1em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .mod-tools-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .mod-tools-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .mod-tools-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2em;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .wiki { background-color: #ffb400; }
+        .toolset { background-color: #4CAF50; }
+
+        .mod-tools-button:active {
+            transform: translateY(2px);
+        }
+
+        footer {
+            background-color: rgba(31, 40, 51, 0.8);
+            color: #66fcf1;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 0 #000;
+        }
+
+        footer p {
+            margin: 10px 0 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <div class="mod-tools-content">
+                <p>These patches were created using a program called UPK Explorer. This program provides the necessary tools to develop and implement updates and changes to the game effectively.</p>
+                
+                <img src="upk-explorer.png" alt="UPK Explorer" class="mod-tools-image">
+                
+                <div class="mod-tools-links">
+                    <a href="https://www.pcgamingwiki.com/wiki/UPK_Explorer" class="mod-tools-button wiki">
+                        View Wiki
+                    </a>
+                    <a href="https://www.nexusmods.com/site/mods/587" class="mod-tools-button toolset">
+                        View Program
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Monster Madness: Battle for Suburbia was developed/published by SouthPeak Games/Artificial Studios/Immersion Games. Although the company is now defunct, all rights to the game still belong to the individuals who worked on its development. This community patch is in no way associated with Artificial Studios or any entities formerly associated with it. All art, footage, and assets used in this patch remain the intellectual property of their respective creators. Any modifications to the game are done at the user's own risk. The creators of this patch do not take responsibility for any issues or damages that may arise from its use.</p>
+    </footer>
+</body>
+</html>

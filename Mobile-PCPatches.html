@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Madness: Battle for Suburbia - PC Patches</title>
+    <style>
+        @font-face {
+            font-family: 'DNK';
+            src: url('dnk.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'DNK', sans-serif;
+            background-color: #0b0c10;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px 0;
+            background-color: rgba(31, 40, 51, 0.8);
+        }
+
+        h1, h2 {
+            color: #66fcf1;
+            text-shadow: 2px 2px #000;
+        }
+
+        .content-wrapper {
+            padding: 15px;
+        }
+
+        .main-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .patches-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .patches-section p {
+            margin-bottom: 15px;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .patch-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .patch-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .patch-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .patch-button img {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .wiki { background-color: #039eb3; }
+        .costume-changes { background-color: #8e44ad; }
+        .restore { background-color: #ff6347; }
+        .download { background-color: #f56ec8; }
+
+        .patch-button:active {
+            transform: translateY(2px);
+        }
+
+        footer {
+            background-color: rgba(31, 40, 51, 0.8);
+            color: #66fcf1;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 0 #000;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logos img {
+            max-width: 80px;
+        }
+
+        .esrb-logo {
+            max-width: 40px;
+        }
+
+        footer p {
+            margin: 10px 0 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <div class="patches-section">
+                <h2>How to Install the Patches</h2>
+                <p>To install a patch download patcher, run as admin, set game folder, extract the patch, Select "My Mod" and install, if you have problems someone can help in the discord</p>
+                
+                <img src="7.png" alt="PC Patch" class="patch-image">
+                
+                <div class="patch-links">
+                    <a href="Monster Madness PC Patch.zip" class="patch-button wiki" download>
+                        <img src="S.png" alt="Wiki Icon"> PC PATCH DOWNLOAD
+                    </a>
+                    <a href="RestoreMovies.zip" class="patch-button costume-changes" download>
+                        <img src="0.png" alt="Costume Changes Icon"> Restore High school Cutscene
+                    </a>
+                    <a href="Monster_FolderRestore_RUN_AS_ADMIN.bat" class="patch-button restore" download>
+                        <img src="MMLogo.png" alt="Restore Folder Icon"> Restore folders
+                    </a>
+                    <a href="https://www.nexusmods.com/site/mods/588" class="patch-button download">
+                        <img src="patch-icon.png" alt="Patch Icon"> Download Patcher
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logos">
+                <img src="studio-logo1.png" alt="Studio Logo 1">
+                <img src="studio-logo2.png" alt="Studio Logo 2">
+                <img src="studio-logo3.png" alt="Studio Logo 3">
+                <img src="esrb.png" alt="ESRB Rating" class="esrb-logo">
+            </div>
+            <p>Monster Madness: Battle for Suburbia was developed/published by SouthPeak Games/Artificial Studios/Immersion Games. Although the company is now defunct, all rights to the game still belong to the individuals who worked on its development. This community patch is in no way associated with Artificial Studios or any entities formerly associated with it. All art, footage, and assets used in this patch remain the intellectual property of their respective creators. Any modifications to the game are done at the user's own risk. The creators of this patch do not take responsibility for any issues or damages that may arise from its use.</p>
+        </div>
+    </footer>
+</body>
+</html>

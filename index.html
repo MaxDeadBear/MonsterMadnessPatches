@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Version</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'DNK', Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            cursor: url('1.png'), auto;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-family: 'DNK', Arial, sans-serif;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 50px;
+            padding: 10px;
+            margin: 15px auto;
+            font-size: 1.6em;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ffdd57;
+            border-radius: 5px;
+            border: 3px solid #000;
+            cursor: inherit;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background-color: #ffd700;
+            color: #ff7f00;
+            text-shadow: 
+                0 0 8px #000000, 
+                0 0 16px #000000, 
+                0 0 24px #000000, 
+                0 0 32px #000000;
+            transform: translateY(-2px);
+        }
+        body.mousedown {
+            cursor: url('2.png'), auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Viewer</h1>
+        <a href="HomeMobile.html" class="button">View Mobile site</a>
+        <a href="HomePC.html" class="button">View PC site</a>
+    </div>
+
+    <script>
+    document.addEventListener('mousedown', function() {
+        document.body.classList.add('mousedown');
+    });
+
+    document.addEventListener('mouseup', function() {
+        document.body.classList.remove('mousedown');
+    });
+    </script>
+</body>
+</html>
