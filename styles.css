@@ -1,0 +1,55 @@
+/* Reset margin and padding for all elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Full background image covering the entire page */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional for parallax effect */
+    cursor: url('normal-cursor.png'), auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: cursor 0.1s ease;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds text shadow for better readability */
+}
+
+/* Styling the button */
+.custom-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: inherit;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+/* Links will also maintain the custom cursor */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}

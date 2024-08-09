@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'DNK';
+    src: url('dnk.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DNK', sans-serif;
+    background-color: #0b0c10;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1f2833;
+    color: #66fcf1;
+    font-size: 1.5em;
+    text-shadow: 2px 2px #000;
+}
+
+.content-wrapper {
+    padding: 15px;
+}
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.patches-section {
+    margin: 20px 0;
+}
+
+.patches-section p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.patch-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.patch-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.patch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 12px;
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.patch-button img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.wiki {
+    background-color: #ffb400;
+}
+
+.wiki:active {
+    background-color: #e6a000;
+    transform: translateY(2px);
+}
+
+.patch {
+    background-color: #4c66af;
+}
+
+.patch:active {
+    background-color: #455ea3;
+    transform: translateY(2px);
+}
+
+footer {
+    background-color: #1f283300;
+    color: #66fcf1;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'DNK', cursive;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logos img {
+    max-width: 80px;
+}
+
+.esrb-logo {
+    max-width: 40px;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        font-size: 1.8em;
+    }
+
+    .patch-button {
+        font-size: 1.1em;
+    }
+
+    .logos img {
+        max-width: 100px;
+    }
+
+    .esrb-logo {
+        max-width: 50px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
